@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Student CRUD - Login</title>
+    <style>
+    /* Background gradient */
+   body {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins, sans-serif;
+    height: 100vh;
+    background: linear-gradient(135deg, #000000, #004d40);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box {
+    width: 350px;
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.45);
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(0,255,150,0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(0,255,150,0.3);
+    text-align: center;
+}
+
+.login-box h2 {
+    color: #00ffa3;
+    margin-bottom: 25px;
+    font-size: 28px;
+}
+
+.input-box {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-bottom: 2px solid #00ffa3;
+    background: transparent;
+    font-size: 17px;
+    color: #fff;
+    outline: none;
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    color: #ccc;
+    pointer-events: none;
+    transition: 0.4s;
+    transform: translateY(-50%);
+}
+
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+    top: -5px;
+    font-size: 13px;
+    color: #00ffa3;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    background: #00ffa3;
+    border: none;
+    border-radius: 25px;
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #4dffd1;
+}
+
+.register-link {
+    color: #eee;
+}
+
+.register-link a {
+    color: #00ffa3;
+}
+
+    </style>
+</head>
+<body>
+
+<div class="login-box">
+    <h2>Login</h2>
+    
+    <!-- change this action to your LoginServlet mapping, e.g. /login -->
+    <form action="login" method="post">
+        <div class="input-box">
+            <input type="text" name="uname" required>
+            <label>Username</label>
+        </div>
+
+        <div class="input-box">
+            <input type="password" name="pwd" required>
+            <label>Password</label>
+        </div>
+
+        <button type="submit" class="btn">Login</button>
+    </form>
+
+    <div class="register-link">
+        Don’t have an account?
+        <a href="register.html">Register here</a>
+    </div>
+</div>
+
+</body>
+</html>
