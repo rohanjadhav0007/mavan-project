@@ -41,9 +41,10 @@
         <repository>
             <id>github</id>
             <name>mavan project</name>
-            <url>https://github.com/rohanjadhav0007/mavan-project</url>
+            <url>rohanjadhav0007/mavan-project</url>
         </repository>
     </distributionManagement>
     <!-- 🔼 ADD THIS BLOCK FOR GITHUB PACKAGES 🔼 -->
 
 </project>
+
